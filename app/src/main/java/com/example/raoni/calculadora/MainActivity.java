@@ -2,6 +2,8 @@ package com.example.raoni.calculadora;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.raoni.calculadora.R;
+
 
 
 
@@ -13,6 +15,7 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private CalculadoraGorjeta calculadora;
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText etTotal10;
     private EditText etTotal15;
     private EditText etTotal20;
+    private EditText etQtePessoa;
+    private EditText etTotalIndividual;
+;
 
     private EditText etValorConta;
     private SeekBar sbPersonalizado;
@@ -44,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         etTotal10 = (EditText) findViewById(R.id.etTotal10);
         etTotal15 = (EditText) findViewById(R.id.etTotal15);
         etTotal20 = (EditText) findViewById(R.id.etTotal20);
+        etQtePessoa =(EditText) findViewById(R.id.etQtePessoa);
+        etTotalIndividual = (EditText) findViewById(R.id.etTotalIndividual);
 
         etValorConta = (EditText) findViewById(R.id.etValorConta);
 
@@ -53,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         etTotalPersonalizado = (EditText) findViewById(R.id.etTotalPersonalizado);
 
         etValorConta.addTextChangedListener(new ContaTextWatcher());
+
 
         sbPersonalizado.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -120,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
         etGorjetaPersonalizada.setText(""+gorjP);
         etTotalPersonalizado.setText(""+totalP);
+        etTotalIndividual.setText(" "+totalP/Float.parseFloat(etQtePessoa.getText().toString()));
 
         tvPersonalizado.setText(""+
                 sbPersonalizado.getProgress()+"%");

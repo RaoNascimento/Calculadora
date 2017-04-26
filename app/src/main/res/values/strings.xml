@@ -7,4 +7,6 @@
     <string name="gorjeta">Gorjeta</string>
     <string name="total">Total</string>
     <string name="personalizado">Personalizado</string>
+    <string name="QtdePessoa" >Qtde Pessoas</string>
+    <string name="totalIndividual" >Total individual</string>
 </resources>

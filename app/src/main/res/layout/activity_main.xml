@@ -22,11 +22,24 @@
 
         <EditText
             android:id="@+id/etValorConta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_span="3"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:text="0.00" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/qtdePessoa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:ems="10"
+            android:inputType="number"
             android:text="0.00" />
 
     </TableRow>
@@ -184,6 +197,41 @@
 
         <EditText
             android:id="@+id/etTotalPersonalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/QtdePessoa" />
+
+        <EditText
+            android:id="@+id/etQtePessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:text="0.00" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/totalIndividual" />
+
+        <EditText
+            android:id="@+id/etTotalIndividual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
